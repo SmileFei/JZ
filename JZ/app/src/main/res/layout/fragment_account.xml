@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--账本Fragment布局-->
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/item_group" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/float_button_account"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:elevation="5dp"
+            android:src="@mipmap/float_button_account"
+            app:backgroundTint="@color/colorPrimary"
+            app:borderWidth="0dp"
+            app:pressedTranslationZ="10dp" />
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

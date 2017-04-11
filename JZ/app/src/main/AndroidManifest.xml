@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ytt.jz">
+    <!--权限列表-->
+    <application
+        android:name=".jzbase.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 欢迎页 -->
+        <activity
+            android:name=".jzview.activity.WelcomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WelcomActivity_bg">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 首页 -->
+        <activity
+            android:name=".jzview.activity.FirstPageActivity"
+            android:screenOrientation="portrait" />
+        <!--引导页-->
+        <activity
+            android:name=".jzview.activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WelcomActivity_bg"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--引导页底部小圆点未选中效果-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="7.5dp"
+        android:height="7.5dp">
+        <shape>
+            <corners android:radius="7.5dp" />
+            <solid android:color="@color/firstPage_StrokeColor" />
+            />
+        </shape>
+    </item>
+</layer-list>

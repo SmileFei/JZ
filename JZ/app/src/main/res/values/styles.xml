@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--欢迎页-->
+    <!--欢迎页样式-->
+    <style name="WelcomActivity_bg" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--引导页-->
+    <!--引导页底部indexPoint样式-->
+    <style name="GuideActivity_BottomPoint">
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/viewpager_point_normal</item>
+    </style>
+    <!--首页-->
+    <!--首页底部按钮样式-->
+    <style name="firstPage_bottomTabView">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <!--计划Fragment-->
+    <!--计划页面顶部星期数样式-->
+    <style name="plan_TopWeekStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

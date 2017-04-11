@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">计账</string>
+    <!--首页底部导航栏文本-->
+    <string name="firstPage_bottomTab_account">账本</string>
+    <string name="firstPage_bottomTab_plan">计划</string>
+    <string name="firstPage_bottomTab_self">我的</string>
+    <!--计划顶部星期数-->
+    <string name="plan_TopWeek_Sunday">日</string>
+    <string name="plan_TopWeek_Monday">一</string>
+    <string name="plan_TopWeek_Tuesday">二</string>
+    <string name="plan_TopWeek_Wednesday">三</string>
+    <string name="plan_TopWeek_Thursday">四</string>
+    <string name="plan_TopWeek_Friday">五</string>
+    <string name="plan_TopWeek_Saturday">六</string>
+
+</resources>

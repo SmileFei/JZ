@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--首页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".jzview.activity.FirstPageActivity">
+    <!--firstPageToolBarGroup-->
+    <RelativeLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></RelativeLayout>
+    <!--firstPageFragmentViewPager-->
+    <com.ytt.jz.jzutils.viewutils.HorizontalViewPager
+        android:id="@+id/firstpage_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.ytt.jz.jzutils.viewutils.HorizontalViewPager>
+    <!--firstPageFragmentTabGroup-->
+    <LinearLayout
+        android:id="@+id/firstpage_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/firstpage_tablayout_bg"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <com.ytt.jz.jzutils.viewutils.BottomTabView
+            android:id="@+id/firstPage_bottomTab_account"
+            style="@style/firstPage_bottomTabView"
+            app:color="@color/colorPrimary"
+            app:icon="@mipmap/tab_account_normal"
+            app:text="@string/firstPage_bottomTab_account"
+            app:text_size="13dp" />
+        <com.ytt.jz.jzutils.viewutils.BottomTabView
+            android:id="@+id/firstPage_bottomTab_plan"
+            style="@style/firstPage_bottomTabView"
+            app:color="@color/colorPrimary"
+            app:icon="@mipmap/tab_plan_normal"
+            app:text="@string/firstPage_bottomTab_plan"
+            app:text_size="13dp" />
+        <com.ytt.jz.jzutils.viewutils.BottomTabView
+            android:id="@+id/firstPage_bottomTab_self"
+            style="@style/firstPage_bottomTabView"
+            app:color="@color/colorPrimary"
+            app:icon="@mipmap/tab_self_normal"
+            app:text="@string/firstPage_bottomTab_self"
+            app:text_size="13dp" />
+    </LinearLayout>
+</LinearLayout>

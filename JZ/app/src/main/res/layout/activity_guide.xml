@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--引导页-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jzview.activity.GuideActivity">
+    <!--引导页图片轮播-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    <!--图片轮播底部小圆点父容器-->
+    <LinearLayout
+        android:id="@+id/guide_staticPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:orientation="horizontal">
+        <!--normal_Point-->
+        <ImageView style="@style/GuideActivity_BottomPoint" />
+        <!--normal_Point-->
+        <ImageView
+            style="@style/GuideActivity_BottomPoint"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+    <!--focus-Point-->
+    <View
+        android:id="@+id/guide_focusPoint"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_alignLeft="@id/guide_staticPoint"
+        android:layout_alignTop="@id/guide_staticPoint"
+        android:background="@drawable/viewpager_point_focus" />
+    <!--开始按钮-->
+    <Button
+        android:id="@+id/guide_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/guide_start_button"
+        android:visibility="gone" />
+    <!--引导页动画遮罩-->
+    <LinearLayout
+        android:id="@+id/guide_animator"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+</RelativeLayout>

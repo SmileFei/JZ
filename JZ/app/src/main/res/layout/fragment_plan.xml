@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!--计划Fragment布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/plan_TopWeek"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/plan_week_bg"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <TextView
+            style="@style/plan_TopWeekStyle"
+            android:text="@string/plan_TopWeek_Sunday"
+            android:textColor="@color/color_lightBlue" />
+
+        <TextView
+            style="@style/plan_TopWeekStyle"
+            android:text="@string/plan_TopWeek_Monday" />
+
+        <TextView
+            style="@style/plan_TopWeekStyle"
+            android:text="@string/plan_TopWeek_Tuesday" />
+
+        <TextView
+            style="@style/plan_TopWeekStyle"
+            android:text="@string/plan_TopWeek_Wednesday" />
+
+        <TextView
+            style="@style/plan_TopWeekStyle"
+            android:text="@string/plan_TopWeek_Thursday" />
+
+        <TextView
+            style="@style/plan_TopWeekStyle"
+            android:text="@string/plan_TopWeek_Friday" />
+
+        <TextView
+            style="@style/plan_TopWeekStyle"
+            android:text="@string/plan_TopWeek_Saturday"
+            android:textColor="@color/color_lightBlue" />
+    </LinearLayout>
+
+    <com.ytt.jz.jzutils.viewutils.VerticalViewPager
+        android:id="@+id/plan_CalendarViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"></com.ytt.jz.jzutils.viewutils.VerticalViewPager>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/plan_ScheduleItemGroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#f04a4a"></android.support.v7.widget.RecyclerView>
+</LinearLayout>
