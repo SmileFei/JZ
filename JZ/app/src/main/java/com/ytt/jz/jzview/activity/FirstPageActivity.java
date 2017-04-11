@@ -22,14 +22,6 @@ import butterknife.ButterKnife;
 
 
 public class FirstPageActivity extends BaseActivity implements ViewPager.OnPageChangeListener{
-    // commit FirstPageActivity0001
-    // commit FirstPageActivity0002
-    // commit FirstPageActivity_master
-
-    // git tag v1.0
-    // git tag v2.0
-    // git tag v3.0
-
     //VP
     @BindView(R.id.firstpage_fragment)
     HorizontalViewPager viewPager;
