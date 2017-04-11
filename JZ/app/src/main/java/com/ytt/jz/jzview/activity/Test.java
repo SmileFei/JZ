@@ -5,4 +5,5 @@ package com.ytt.jz.jzview.activity;
  */
 
 public class Test {
+    String a ;
 }
