@@ -28,6 +28,7 @@ public class FirstPageActivity extends BaseActivity implements ViewPager.OnPageC
 
     // git tag v1.0
     // git tag v2.0
+    // git tag v3.0
 
     //VP
     @BindView(R.id.firstpage_fragment)
